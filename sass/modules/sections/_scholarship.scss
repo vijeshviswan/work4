@@ -1,0 +1,114 @@
+/*** Scholarship ****************************************************************************************************************************************/
+ .content-outer {
+    width: 100%;
+    float: left;
+    padding: 90px 0 75px;
+    background: $lighter;
+    .title-block {
+        width: 100%;
+        float: left;
+        padding: 0 0 0 24px;
+        h4 {
+            color: $primary-col;
+            font-family: $mainfont;
+            font-weight: $black;
+            padding: 0 0 50px;
+            letter-spacing: 0.65px;
+        }
+    }
+    .left-block {
+        width: 100%;
+        float: left;
+        padding: 0 24px;
+        border-right: 1px solid $border-drk;
+        h6 {
+            color: $shade1;
+            font-size: $sub-header;
+            font-weight: $bold;
+            font-family: $mainfont;
+            padding: 0 0 10px;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            li {
+                display: block;
+                padding: 0 0 5px;
+                a {
+                    color: $shade1;
+                    font-size: $size-p;
+                    letter-spacing: 0.65px;
+                    i {
+                        color: $primary-col;
+                    }
+                    &:hover {
+                        color: $primary-col;
+                    }
+                }
+            }
+        }
+    }
+    .right-block {
+        width: 100%;
+        float: left;
+        text-align: center;
+        h6 {
+            color: $primary-col;
+            font-size: $sub-header;
+            font-weight: $bold;
+            font-family: $mainfont;
+            padding: 0 0 10px;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            li {
+                display: inline-block;
+                padding: 35px 0;
+                img {
+                    width: 100%;
+                }
+                &:hover {
+                    opacity: 0.4;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/*** media queries ****************************************************************************************************************************************/ 
+
+@include breakpoint(large only) {//1024 - 1200  
+    
+    .content-outer .title-block h4 {padding: 0 0 30px;}
+    .content-outer {padding: 65px 0 55px;}
+} 
+@include breakpoint(medium down){ // 767 - 1023 
+    
+    .content-outer .title-block h4 {padding: 0 0 10px;font-size: $size-h5;}
+    .content-outer .left-block h6,.content-outer .right-block h6{font-size: $size-p;padding: 0 0 5px;}
+    .content-outer {padding: 50px 0 45px;}
+    .content-outer .right-block ul li img{width: 200px;}
+}
+@include breakpoint(small only){ //0 -768 
+    
+    p {font-size: $size-base;line-height: 22px;margin: 0 0 15px;}
+    .content-outer .title-block h4 {padding: 0 0 5px;font-size: $intro-size;line-height: 24px;}
+    .content-outer .left-block h6,.content-outer .right-block h6{font-size: $size-base;padding: 0 0 5px;line-height: 18px;}
+    .content-outer {padding: 25px 0 20px;}
+    .content-outer .left-block {padding: 0 15px 20px;border-right: 0;border-bottom: 1px solid $border-drk;margin: 0 0 20px;}
+    .content-outer .right-block{padding: 0 15px;}
+    .content-outer .title-block {padding: 0 15px;}
+    .content-outer .left-block ul li a{font-size: $size-base;}
+    .content-outer .right-block ul li img{width: 175px;}
+    .content-outer .right-block ul li {padding: 20px 0;}
+}
+ 
+@media only screen and (max-width: 479px) {
+	
+}

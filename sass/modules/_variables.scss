@@ -1,0 +1,71 @@
+// Variables
+// -------------------------- 
+@import  "_fonts"; 
+ 
+// Colors and backgrounds
+// --------------------------
+
+$darker:                      	#000000!default;
+$main-txt:                      lighten($darker, 19)    !default; //#313131
+$main-light:                    lighten($darker, 28)    !default; //#474747
+$sub-light:                     lighten($darker, 29)    !default; //#4b4b4b
+$list-light:                    lighten($darker, 47)    !default; //#797979
+$social-bg:                     lighten($darker, 64)    !default; //#a3a3a3
+$border-drk:                    lighten($darker, 68)    !default; //#adadad
+$border-bg:                     lighten($darker, 76)    !default; //#c1c1c1
+$lighter:                      	lighten($darker, 100)   !default; //#ffffff
+
+
+
+$primary-col:       	     #d31b45!default; 
+$second-col:                 #0b184e!default; 
+$second-dark:                #192f52!default; 
+
+$footer-dark:                #132540!default; 
+$border-light:               #475975!default; 
+$shade1:                     #525252!default; 
+$red-color:					 #d21b45!default;
+$table-border-color:		 #999999!default;
+$table-content-color:		 #555555!default;
+
+
+
+//== Typography
+// --------------------------  
+ 
+
+$mainfont: 		'Source Sans Pro', sans-serif; 
+$btnfont:		'Assistant', sans-serif;
+
+$light:       300;
+$regular:     400;
+$semibold:    600;
+$bold:        700;
+$black:       900;
+ 
+
+
+$size-base:    14px !default; 
+
+$size-h1:                       ceil(($size-base * 5.71)) 			!default;   // ~80px
+$size-h2:                       ceil(($size-base * 3.28)) 			!default;   // ~46px
+$size-h3:                       ceil(($size-base * 3)) 			    !default;   // ~42px
+$size-h4:                       ceil(($size-base * 2.85)) 			!default;   // ~40px
+$size-h5:                       ceil(($size-base * 2.14)) 			!default;   // ~30px
+$size-h6:                       ceil(($size-base * 1.71)) 			!default;   // ~24px  
+
+$size-p:                        ceil(($size-base * 1.14)) 			!default;   // ~16px  
+$size-small:                    ceil(($size-base * 1.07)) 			!default;   // ~15px  
+
+$small-size:              		ceil(($size-base * 0.857)) 			!default;   // ~12px
+$intro-size:              		ceil(($size-base * 1.42)) 			!default;   // ~20px
+$divi-size:              		ceil(($size-base * 1.78)) 			!default;   // ~25px
+
+$special-h1:              		ceil(($size-base * 4.28)) 			!default;   // ~60px
+$special-h2:              		ceil(($size-base * 5)) 			    !default;   // ~70px
+
+$small-h6:              		ceil(($size-base * 1.57)) 			!default;   // ~22px
+$sub-header:              		ceil(($size-base * 1.35)) 			!default;   // ~19px 
+$subnav-hdr:              		ceil(($size-base * 1.28)) 			!default;   // ~18px 
+
+ 

@@ -1,0 +1,20 @@
+
+@import 'foundation/util/util';
+@import 'foundation/global'; 
+
+//import modules
+    @import  "modules/_mixins";
+    @import  "modules/_typography";
+    @import  "modules/_header";
+    @import  "modules/_banner";
+    @import  "modules/_footer";
+    @import  "modules/_tabs";
+
+// pages 
+	@import  "modules/sections/_home";
+	@import  "modules/sections/_scholarship";
+	@import  "modules/sections/_generaltemplate";
+	@import  "modules/sections/_honers";
+	@import  "modules/sections/_ranking";
+   
+  

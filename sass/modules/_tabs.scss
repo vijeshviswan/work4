@@ -1,0 +1,148 @@
+/*** Tabs ****************************************************************************************************************************************/
+ .tab-navouterblk {
+     width: 100%;
+     height: auto;
+     float: left;
+     margin-top: -55px;
+     ul {
+         width: 100%;
+         height: auto;
+         float: left;
+         list-style: none;
+         padding: 0 20px;
+         text-align: center;
+         li {
+             width: 33.33%;
+             height: 142px;
+             max-width: 351px;
+             margin-left: -5px;
+             display: inline-block;
+             border: $lighter solid 6px;
+             border-right: $lighter solid 7px;
+             border-left: 0px;
+             position: relative;
+             -webkit-transform: skew(37deg);
+             -moz-transform: skew(37deg);
+             -o-transform: skew(37deg);
+             transform: skew(37deg);
+             overflow: hidden;
+             &:first-child {
+                 border-left: $lighter solid 7px;
+             }
+             a {
+                 -webkit-transform: skew(-37deg);
+                 -moz-transform: skew(-37deg);
+                 -o-transform: skew(-37deg);
+                 transform: skew(-37deg);
+                 width: 150%;
+                 height: 100%;
+                 float: left;
+                 position: absolute;
+                 left: -80px;
+                 background-position: center center;
+                 background-repeat: no-repeat;
+                 background-color: $second-dark;
+                 background-blend-mode: multiply;
+                 padding: 0 130px;
+                 display: table;
+                 vertical-align: middle;
+                 .headerblk {
+                     width: 100%;
+                     height: 100%;
+                     display: table-cell;
+                     vertical-align: middle;
+                     h5 {
+                         font-weight: $black;
+                     }
+                     span {
+                         width: 100%;
+                         float: left;
+                         text-align: left;
+                         padding-left: 17px;
+                     }
+                 }
+                 &:hover {
+                     background-color: $primary-col;
+                 }
+             }
+             &.current a {
+                 background-color: $primary-col;
+             }
+         }
+     }
+ }
+ 
+ .division-litingouter .tab-navouterblk ul li {
+     width: 24%;
+     height: 105px;
+     max-width: 323px;
+ }
+ 
+ .division-litingouter .tab-navouterblk ul li a .headerblk h5 {
+     font-size: $small-h6;
+ }
+ 
+ .ranking-mainouter .tab-navouterblk ul li {
+     width: 19%;
+     height: 105px;
+     max-width: 300px;
+ }
+ 
+ .ranking-mainouter .tab-navouterblk ul li a .headerblk h5 {
+     font-size: $small-h6;
+ }
+ 
+ .ranking-mainouter .tab-navouterblk ul li a {
+     left: -56px;
+     padding: 0 65px;
+ }
+
+ 
+
+
+
+
+
+
+
+/*** media queries ****************************************************************************************************************************************/ 
+
+@include breakpoint(large only) {//1024 - 1200  
+    
+    .tab-navouterblk ul li {width: 30%;}
+    .tab-navouterblk ul li a .headerblk h5{font-size: $small-h6; line-height: 20px;}
+    .tab-navouterblk ul li a .headerblk span{font-size: $size-p;padding-left: 4px;} 
+} 
+@include breakpoint(medium down){ // 767 - 1023 
+    
+    .tab-navouterblk ul li {width: 30%; height: 120px;}
+    .tab-navouterblk ul li a .headerblk h5{font-size: $small-h6; line-height: 20px;}
+    .tab-navouterblk ul li a .headerblk span{font-size: $size-p;padding-left: 8px;}
+    .tab-navouterblk ul li a {padding: 0 68px; left: -50px;}
+    .ranking-mainouter .tab-navouterblk ul li a {left: -35px;padding: 0 40px;}
+    
+    
+}
+@include breakpoint(small only){ //0 -768  
+  
+    .division-litingouter  .tab-navouterblk  {margin:5px 0 0 0px;}
+    .division-litingouter  .tab-navouterblk ul {padding: 0px;margin: 0 2px; }
+    .division-litingouter  .tab-navouterblk ul li{width: 50%; max-width: 100%;  border: $lighter solid 2px;}
+    .division-litingouter  .tab-navouterblk ul li{width: 50%;height: 70px; margin-top: -4px;}
+    .division-litingouter  .tab-navouterblk ul li a .headerblk h5{  font-size:$subnav-hdr;} 
+    .ranking-mainouter .tab-navouterblk  {margin:5px 0 0 0px;}
+    .ranking-mainouter .tab-navouterblk ul {padding: 0px;margin: 0 2px; }
+    .ranking-mainouter .tab-navouterblk ul li{width: 50%; max-width: 100%;  height: 70px; border: $lighter solid 2px;}
+    .ranking-mainouter .tab-navouterblk ul li a {left: 0px;padding: 0 10px;} 
+    .ranking-mainouter .tab-navouterblk ul li a .headerblk h5{  font-size:$subnav-hdr;}    
+    .tab-navouterblk ul li{-webkit-transform: skew(0deg); -moz-transform: skew(0deg); -o-transform: skew(0deg);transform: skew(0deg); border: $lighter solid 5px;  border-right: $lighter solid 5px; width: 100%; margin-top: -4px;}
+    .tab-navouterblk ul li a{width: 100%;  left: 0px; -webkit-transform: skew(0deg); -moz-transform: skew(0deg); -o-transform: skew(0deg);transform: skew(0deg); padding: 0 10px;}
+    .tab-navouterblk ul li a .headerblk span{text-align: center; padding: 0px;}      
+    .division-litingouter .tab-navouterblk ul  {padding: 0px;} 
+    .division-litingouter .tab-navouterblk ul li {width: 50%;height: 70px;margin-top: -4px;}
+
+}
+ 
+@media only screen and (max-width: 479px) {
+   
+}

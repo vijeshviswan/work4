@@ -1,0 +1,125 @@
+/*** General Template ****************************************************************************************************************************************/
+
+.content-outer {
+    .intro-outer {
+        width: 100%;
+        float: left;
+        .intro-inner {
+            width: 100%;
+            float: left;
+            padding: 0 70px;
+            .title-block {
+                text-align: center;
+                padding: 0 20px 34px;
+                border-bottom: 1px solid $border-drk;
+                h4 {
+                    padding: 0 0 40px;
+                }
+                p {
+                    font-size: $intro-size;
+                    line-height: 35px;
+                }
+            }
+        }
+        .list-group {
+            width: 100%;
+            float: left;
+            padding: 40px 0 23px;
+            border-bottom: 1px solid $border-drk;
+            .list-content-single {
+                width: 50%;
+                float: left;
+                padding: 0 30px 0 0;
+                ul {
+                    width: 100%;
+                    margin: 0;
+                    padding: 0 0 0 20px;
+                    list-style: decimal;
+                    li {
+                        width: 100%;
+                        float: left;
+                        color: $primary-col;
+                        font-size: $size-p;
+                        line-height: 29px;
+                        font-weight: $bold;
+                        padding: 0 0 33px 5px;
+                        span {
+                            color: $shade1;
+                            font-size: $size-p;
+                            line-height: 29px;
+                            font-weight: $regular;
+                            letter-spacing: 0.65px;
+                        }
+                    }
+                }
+                &.right-list {
+                    padding: 0 0 0 50px;
+                    ul {
+                        list-style: none;
+                        li {
+                            position: relative;
+                            &:before {
+                                position: absolute;
+                                left: -15px;
+                                content: "\f0da";
+                                color: $primary-col;
+                                top: 0;
+                                font-family: fontAwesome;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .join-block {
+            width: 100%;
+            float: left;
+            text-align: center;
+            margin: 70px 0 10px;
+            h5 {
+                font-weight: $bold;
+                color: $shade1;
+                padding: 0 0 45px;
+                letter-spacing: 0.65px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+/*** media queries ****************************************************************************************************************************************/ 
+
+@include breakpoint(large only) {//1024 - 1200  
+    
+} 
+@include breakpoint(medium down){ // 767 - 1023 
+    .content-outer .intro-outer .intro-inner {padding: 0 40px;}
+    .content-outer .intro-outer .intro-inner .title-block { padding: 0 20px 15px;}
+    .content-outer .intro-outer .list-group {padding: 40px 0 10px;}
+    .content-outer .intro-outer .list-group .list-content-single.right-list {padding: 0 0 0 20px;}
+    .content-outer .intro-outer .intro-inner .title-block h4 {padding: 0 0 20px;}
+    .content-outer .intro-outer .join-block {margin: 40px 0 0;}
+    .content-outer .intro-outer .join-block h5 {padding: 0 0 25px;}
+}
+@include breakpoint(small only){ //0 -768 
+    .content-outer .intro-outer .intro-inner {padding: 0 20px;}
+    .content-outer .intro-outer .intro-inner .title-block { padding: 0 10px 10px;}
+    .content-outer .intro-outer .list-group {padding: 20px 0 10px;}
+    .content-outer .intro-outer .list-group .list-content-single{width: 100%;padding: 0;}
+    .content-outer .intro-outer .list-group .list-content-single.right-list {padding: 0;}
+    .content-outer .intro-outer .intro-inner .title-block h4 {padding: 0 0 10px;}
+    .content-outer .intro-outer .join-block {margin: 35px 0 20px;}
+    .content-outer .intro-outer .join-block h5 {padding: 0 0 25px;}
+    .content-outer .intro-outer .intro-inner .title-block p{line-height: 26px;font-size: $size-p;}
+    .content-outer .intro-outer .list-group .list-content-single ul{text-align: left;}
+    .content-outer .intro-outer .list-group .list-content-single ul li {padding: 0 0 15px 5px;font-size: $size-base;line-height: 22px;}
+    .content-outer .intro-outer .list-group .list-content-single ul li span{font-size: $size-base;line-height: 22px;}
+}
+ 
+@media only screen and (max-width: 479px) {
+	
+}

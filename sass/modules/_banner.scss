@@ -1,0 +1,92 @@
+/*** Banner ****************************************************************************************************************************************/
+  .main-banner {
+      width: 100%;
+      float: left;
+      position: relative;
+      img {
+          width: 100%;
+          display: block;
+      }
+      .banner-content {
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          text-align: center;
+          top: 50%;
+          padding-top: 133px;
+          @include transform-translatey(-50%);
+          h1 {
+              font-family: $mainfont;
+              font-weight: $black;
+              letter-spacing: 1.2px;
+              text-shadow: 0px 5px 30px rgba(0, 0, 0, 0.45);
+              padding-bottom: 14px;
+          }
+          h2 {
+              letter-spacing: 3px;
+          }
+      }
+  }
+  
+  .ranking {
+      width: 100%;
+      float: left;
+      .banner-content {
+          h1 {
+              font-size: $special-h1;
+          }
+      }
+  }
+  
+  .inner-banner {
+      width: 100%;
+      float: left;
+      position: relative;
+      img {
+          width: 100%;
+          display: block;
+      }
+      .banner-content {
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          text-align: center;
+          top: 50%;
+          padding-top: 133px;
+          @include transform-translatey(-50%);
+          h1 {
+              font-family: $mainfont;
+              font-weight: $black;
+              letter-spacing: 1.2px;
+              text-shadow: 0px 5px 30px rgba(0, 0, 0, 0.45);
+          }
+      }
+  }
+
+
+
+/*** media queries ****************************************************************************************************************************************/ 
+
+@include breakpoint(large only) {//1024 - 1200   
+    .main-banner .banner-content h1{font-size: $special-h1;}
+    .inner-banner .banner-content h1{font-size: $special-h1;}
+    .main-banner img{width: 1500px; max-width: none; left: 50%; margin-left: -750px; position: relative;}
+    .inner-banner img{width: 1500px; max-width: none; left: 50%; margin-left: -600px; position: relative;} 
+} 
+@include breakpoint(medium down){ // 767 - 1023  
+    .main-banner .banner-content h1{font-size: $size-h2; padding-bottom: 0px; line-height: 45px;}
+    .main-banner .banner-content h2{font-size: $size-h5; padding-bottom: 0px; line-height: 30px;}
+    .inner-banner .banner-content h1{font-size: $size-h2;}
+    .ranking .banner-content h1 {font-size: $size-h2;}    
+    .main-banner img{width: 1500px; max-width: none; left: 50%; margin-left: -750px; position: relative;}
+    .inner-banner img{width: 1200px; max-width: none; left: 50%; margin-left: -600px; position: relative;} 
+}
+@include breakpoint(small only){ //0 -768  
+    .main-banner .banner-content h1{font-size: $size-h5;line-height: 60px;letter-spacing: 0;}
+    .inner-banner .banner-content h1{font-size: $size-h4;line-height: 40px;letter-spacing: 0;}
+    .main-banner .banner-content h2{font-size: $size-p; padding-bottom: 0px; line-height: 24px;}
+    .ranking .banner-content h1 {font-size: $size-h4;line-height: 40px;letter-spacing: 0;}
+}
+  

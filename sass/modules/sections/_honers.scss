@@ -1,0 +1,342 @@
+/*** honers ****************************************************************************************************************************************/
+
+.main-out {
+    background: #ffffff;
+    border-bottom: 1px solid $table-border-color;
+}
+
+.main-tab-container {
+    width: 100%;
+    float: left;
+    height: auto;
+    .main-tab-content {
+        width: 100%;
+        float: left;
+        height: auto;
+        .tab-contents {
+            width: 100%;
+            float: left;
+            .tab-content-box {
+                width: 100%;
+                float: left;
+                padding: 70px 98px 80px 98px;
+                border-top: 1px solid $table-border-color;
+                &:first-child {
+                    border-top: 0px;
+                }
+                .hd-list {
+                    width: 100%;
+                    float: left;
+                    padding-bottom: 35px;
+                    text-align: center;
+                    h6 {
+                        display: inline-block;
+                        color: $second-dark;
+                        font-family: $mainfont;
+                        font-size: $divi-size;
+                        font-weight: $bold;
+                        padding: 0 15px;
+                        position: relative;
+                        span {
+                            color: $red-color;
+                        }
+                        &:first-child:before {
+                            display: none;
+                        }
+                        &:before {
+                            position: absolute;
+                            content: "::";
+                            left: -10px;
+                            top: 0px;
+                            font-size: $small-h6;
+                        }
+                    }
+                }
+                .table-block {
+                    width: 100%;
+                    float: left;
+                    .table-hd {
+                        width: 100%;
+                        float: left;
+                        background: $second-dark;
+                        padding: 10px 0px;
+                        padding-left: 58px;
+                        span {
+                            color: $lighter;
+                            font-size: $size-p;
+                            font-family: $mainfont;
+                            float: left;
+                            font-weight: $bold;
+                            &.hd-name {
+                                width: 20%;
+                            }
+                            &.hd-grade {
+                                width: 8%;
+                            }
+                            &.hd-position {
+                                width: 12%;
+                            }
+                            &.hd-school {
+                                width: 44%;
+                            }
+                            &.hd-coach {
+                                width: 16%;
+                            }
+                        }
+                    }
+                    .table-cnt {
+                        width: 100%;
+                        float: left;
+                        border: 1px solid $table-border-color;
+                        border-top: 0px;
+                        padding-left: 58px;
+                        padding-top: 25px;
+                        padding-bottom: 10px;
+                        .table-row {
+                            width: 100%;
+                            float: left;
+                            padding-bottom: 15px;
+                            span {
+                                color: $table-content-color;
+                                font-size: $size-p;
+                                font-family: $mainfont;
+                                float: left;
+                                font-weight: $semibold;
+                                &.cnt-name {
+                                    width: 20%;
+                                    font-weight: $bold;
+                                }
+                                &.cnt-grade {
+                                    width: 8%;
+                                }
+                                &.cnt-position {
+                                    width: 12%;
+                                }
+                                &.cnt-school {
+                                    width: 44%;
+                                }
+                                &.cnt-coach {
+                                    width: 16%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #jquery-tab-pager-navi {
+            display: none;
+        }
+        #jquery-tab-pager-navig {
+            width: auto;
+            float: right;
+            height: auto;
+            list-style: none;
+            padding-top: 5px;
+            padding-bottom: 55px;
+            padding-right: 98px;
+            .it-val {
+                display: none;
+            }
+            li {
+                float: right;
+                list-style: none;
+                position: relative;
+                &:first-child {
+                    float: left;
+                    padding-right: 10px;
+                    margin-right: 10px;
+                    &:after {
+                        content: "";
+                        width: 1px;
+                        background: $red-color;
+                        height: 16px;
+                        position: absolute;
+                        right: -1px;
+                        top: 4px;
+                    }
+                }
+                a {
+                    color: $second-dark;
+                    font-size: $size-p;
+                    font-family: $mainfont;
+                    font-weight: $bold;
+                    i {
+                        color: $red-color;
+                        font-size: $size-p;
+                        padding: 0px 8px;
+                    }
+                    &:hover {
+                        color: $red-color;
+                    }
+                }
+            }
+            &.page-nav {
+                display: none;
+            }
+        }
+        .social-sharing {
+            width: auto;
+            float: left;
+            height: auto;
+            padding-top: 0px;
+            padding-bottom: 50px;
+            padding-left: 98px;
+            ul {
+                width: auto;
+                float: left;
+                list-style: none;
+                li {
+                    list-style: none;
+                    width: auto;
+                    float: left;
+                    padding: 0 6px;
+                    a {
+                        width: 40px;
+                        height: 40px;
+                        float: left;
+                        background: $second-dark;
+                        @include border-radius(40px);
+                        text-align: center;
+                        padding-top: 8px;
+                        &:hover {
+                            background: $red-color;
+                        }
+                    }
+                }
+            }
+            span {
+                color: $red-color;
+                font-size: $size-p;
+                font-family: $mainfont;
+                float: left;
+                font-weight: $bold;
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+.ext-link {
+    width: 100%;
+    float: left;
+    padding-left: 140px;
+    a {
+        text-align: left;
+        font-size: $size-p;
+        font-family: $mainfont;
+        font-weight: $semibold;
+        color: $table-content-color;
+        &:hover {
+            color: $red-color;
+        }
+    }
+}
+
+.sp-list {
+    width: 100%;
+    float: left;
+    text-align: center;
+    .sp-list-out {
+        width: auto;
+        max-width: 800px;
+        display: inline-block;
+        padding: 50px 0px;
+    }
+    ul {
+        float: left;
+        list-style: none;
+        li {
+            float: left;
+            padding-right: 10px;
+            list-style: none;
+        }
+    }
+    span {
+        font-size: $divi-size;
+        color: $sub-light;
+        float: left;
+        font-weight: $bold;
+        font-family: $mainfont;
+        width: 180px;
+        text-align: left;
+        line-height: 25px;
+        padding-top: 35px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*** media queries ****************************************************************************************************************************************/ 
+
+@include breakpoint(large only) {//1024 - 1200  
+	.main-tab-container .main-tab-content .tab-contents .tab-content-box{ padding: 50px; }
+} 
+@include breakpoint(medium down){ // 767 - 1023 
+	
+	.main-tab-container .main-tab-content .tab-contents .tab-content-box{ padding: 20px; }
+	.main-tab-container .main-tab-content .tab-contents .tab-content-box .table-block .table-cnt, .main-tab-container .main-tab-content .tab-contents .tab-content-box .table-block .table-hd{ padding-left:10px; }
+	.main-tab-container .main-tab-content .tab-contents .tab-content-box .hd-list h6{ font-size:$sub-header; }
+	.ext-link{ padding-left:100px; }
+	.main-tab-container .main-tab-content .tab-contents .tab-content-box .table-block .table-cnt .table-row span, .main-tab-container .main-tab-content .tab-contents .tab-content-box .table-block .table-hd span{ font-size:$small-size; }
+	.main-tab-container .main-tab-content .tab-contents .tab-content-box .hd-list{ padding-bottom:15px; }
+	.main-tab-container .main-tab-content .social-sharing, .main-tab-container .main-tab-content #jquery-tab-pager-navig{ padding-left:0px; padding-right:0px; padding-bottom:18px; }
+	.main-tab-container .main-tab-content .social-sharing ul li a{ width:30px; height:30px; font-size:$small-size; padding-top:5px; }
+	.main-tab-container .main-tab-content .social-sharing span{ margin-top:5px; }
+	.sp-list ul li{ width:180px; }
+	.sp-list ul li a{ width:100%; }
+	.sp-list ul li a img{ float:left; }
+	.sp-list span{ padding-top:15px; }
+	.sp-list .sp-list-out{ padding:20px 0px;}
+	
+}
+@include breakpoint(small only){ //0 -768 
+	.main-tab-container .main-tab-content .tab-contents .tab-content-box .table-block .table-hd span{ display:none; }
+	.main-tab-container .main-tab-content .tab-contents .tab-content-box .table-block .table-hd span:first-child{display:block;
+	width:100%; }
+	.main-tab-container .main-tab-content .tab-contents .tab-content-box .table-block .table-cnt .table-row{ border-top: 1px solid $table-border-color; padding-top:10px;  }
+	.main-tab-container .main-tab-content .tab-contents .tab-content-box .table-block .table-cnt .table-row:first-child{ border-top:0px; }
+	.main-tab-container .main-tab-content .tab-contents .tab-content-box .table-block .table-cnt .table-row span.cnt-name{ width:100%; font-size:$size-p; padding-bottom:5px; }
+	.main-tab-container .main-tab-content .tab-contents .tab-content-box .table-block .table-cnt .table-row span.cnt-grade,
+	.main-tab-container .main-tab-content .tab-contents .tab-content-box .table-block .table-cnt .table-row span.cnt-position,
+	.main-tab-container .main-tab-content .tab-contents .tab-content-box .table-block .table-cnt .table-row span.cnt-school,
+	.main-tab-container .main-tab-content .tab-contents .tab-content-box .table-block .table-cnt .table-row span.cnt-coach{ width:100%; float:left; padding-left:40%; position:relative; }
+	
+	.main-tab-container .main-tab-content .tab-contents .tab-content-box .table-block .table-cnt .table-row span.cnt-grade:before{ content: "Grade"; position:absolute; left:0px; font-weight:$bold; }
+	.main-tab-container .main-tab-content .tab-contents .tab-content-box .table-block .table-cnt .table-row span.cnt-position:before{ content: "Position"; position:absolute; left:0px; font-weight:$bold;}
+	.main-tab-container .main-tab-content .tab-contents .tab-content-box .table-block .table-cnt .table-row span.cnt-school:before{ content: "School"; position:absolute; left:0px; font-weight:$bold;}
+	.main-tab-container .main-tab-content .tab-contents .tab-content-box .table-block .table-cnt .table-row span.cnt-coach:before{ content: "Coach"; position:absolute; left:0px; font-weight:$bold;}
+	
+	.main-tab-container .main-tab-content .tab-contents .tab-content-box .table-block .table-cnt{ padding-top:10px; }
+	.ext-link{ padding-left:0px; text-align:center;  }
+	
+	.main-tab-container .main-tab-content #jquery-tab-pager-navig{ width:302px; float:none; margin:0 auto; }
+	.main-tab-container .main-tab-content #jquery-tab-pager-navig li a{ font-size:$small-size; }
+	.main-tab-container .main-tab-content .social-sharing{  width:302px; float:none; margin:0 auto; overflow:hidden; padding-top:10px;  }
+	.main-tab-container .main-tab-content .social-sharing span{ font-size:$small-size; }
+	.main-tab-container .main-tab-content .tab-contents .tab-content-box .hd-list h6{ line-height:22px; }
+	
+	.sp-list span{ width:100%; font-size:$sub-header; }
+	.sp-list{ text-align:center; }
+	.sp-list ul{ float:none; margin: 0 auto; }
+	.sp-list ul li{ margin:0 auto; float:none; }
+}
+ 
+@media only screen and (max-width: 479px) {
+	
+}

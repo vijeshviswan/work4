@@ -1,0 +1,117 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    color: $lighter;
+}
+
+body{
+    font-family: $mainfont;
+    font-size: $size-base;
+    background: $lighter;
+	@include transition(all, .4s, ease-in-out);
+}
+html{
+	@include transition(all, .4s, ease-in-out);
+}
+
+/**
+ * 2.0 Headings
+ * ----------------------------------------------------------------------------
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    clear: both;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    font-family: $mainfont;
+}
+
+h1 {
+    font-size: $size-h1;
+    line-height: 60px;
+}
+
+h2 {
+    font-size: $size-h2;
+    line-height: 50px;
+    font-weight: $light;
+}
+
+h3 {
+    font-size: $size-h3;
+    line-height: 45px;
+}
+
+h4 {
+    font-size: $size-h4;
+    line-height: 30px;
+}
+
+h5 {
+    font-size: $size-h5;
+    line-height: 33px;
+}
+
+h6 {
+    font-size: $size-h6;
+    line-height: 33px;
+}
+
+p {
+    font-size: $size-p;
+    line-height: 29px;
+    color: $main-txt;
+    margin: 0 0 27px 0;
+    letter-spacing: 0.65px;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+    margin-top: 0;
+}
+
+a {
+    color: $primary-col;
+    text-decoration: none;
+    @include transit;
+}
+
+a:visited {
+    outline: 0;
+}
+
+a:active,
+a:hover,
+a:focus {
+    outline: 0;
+    text-decoration: none;
+    color: $primary-col;
+}
+
+
+/* Placeholder text color -- selectors need to be separate to work. */
+
+::-webkit-input-placeholder {
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    opacity: 1;
+}

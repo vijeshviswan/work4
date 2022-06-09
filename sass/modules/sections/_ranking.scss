@@ -1,0 +1,237 @@
+/*** Ranking ****************************************************************************************************************************************/
+ .content-outer.ranking {
+    padding: 0;
+    .divi-week-block {
+        width: 100%;
+        float: left;
+        border: 1px solid $border-bg;
+        .dw-heading {
+            width: 100%;
+            float: left;
+            padding: 53px 50px 40px;
+            border-bottom: 1px solid $border-bg;
+            .date {
+                color: $sub-light;
+                font-size: $size-p;
+                font-weight: $semibold;
+                line-height: 31px;
+                padding: 0 0 0 15px;
+                letter-spacing: 1.2px;
+            }
+        }
+        .dw-content {
+            width: 100%;
+            float: left;
+            padding: 50px 40px 40px 70px;
+            border-bottom: 1px solid $border-bg;
+            .tabs {
+                background: none;
+                border: 0;
+                li {
+                    width: auto;
+                    padding: 5px 0 0;
+                    a {
+                        color: $primary-col;
+                        font-size: $size-p;
+                        font-weight: $bold;
+                        display: inline-block;
+                        border: 1px solid transparent;
+                        padding: 15px 25px;
+                        letter-spacing: 0.65px;
+                    }
+                    a[aria-selected="true"] {
+                        background: none;
+                        color: $second-dark;
+                        border: 1px solid $second-dark;
+                    }
+                }
+            }
+            .tabs-content {
+                width: 100%;
+                float: left;
+                background: none;
+                border: 0;
+                padding: 0 0 0 25px;
+                .tabs-panel {
+                    width: 100%;
+                    float: left;
+                    padding: 0;
+                    ul {
+                        width: 100%;
+                        float: left;
+                        margin: 0;
+                        padding: 0 0 40px 25px;
+                        list-style: decimal;
+                        li {
+                            width: 100%;
+                            float: left;
+                            color: $second-dark;
+                            font-size: $size-p;
+                            line-height: 25px;
+                            font-weight: $bold;
+                            padding: 0 0 0 10px;
+                            h6 {
+                                color: $primary-col;
+                                font-size: $size-p;
+                                line-height: 25px;
+                                font-weight: $bold;
+                                letter-spacing: 0.65px;
+                                span {
+                                    color: $list-light;
+                                    font-weight: $semibold;
+                                }
+                            }
+                        }
+                    }
+                    p {
+                        float: left;
+                        line-height: 24px;
+                        span {
+                            color: $primary-col;
+                            font-weight: $bold;
+                        }
+                    }
+                }
+            }
+        }
+        .social-share {
+            width: 100%;
+            float: left;
+            padding: 35px 45px 35px 55px;
+            .social-links {
+                border-bottom: 0;
+                float: left;
+                margin: 0;
+                padding: 0;
+                ul {
+                    width: auto;
+                    float: left;
+                    text-align: left;
+                    li {
+                        background: $second-dark;
+                        i {
+                            color: $lighter;
+                        }
+                        &:hover {
+                            background: $primary-col;
+                        }
+                    }
+                }
+                span {
+                    color: $primary-col;
+                    float: left;
+                    font-size: $size-small;
+                    font-weight: $bold;
+                    line-height: 40px;
+                }
+                .dw-name {
+                    color: $sub-light;
+                    font-size: $size-p;
+                    float: right;
+                }
+            }
+        }
+    }
+}
+
+.ranking-outer {
+    width: 100%;
+    float: left;
+    padding: 0 0 100px;
+    .tab-navouterblk {
+        margin-top: -35px;
+    }
+    .main-tab-item .tab-contents .tab-content-box {
+        padding: 167px 0 80px 48px;
+    }
+    .dw-title {
+        width: 100%;
+        float: left;
+        h6 {
+            display: inline-block;
+            color: $second-dark;
+            font-family: $mainfont;
+            font-size: $divi-size;
+            font-weight: $bold;
+            padding: 0 15px;
+            position: relative;
+            letter-spacing: 1.2px;
+            span {
+                color: $red-color;
+            }
+            &:first-child:before {
+                display: none;
+            }
+            &:before {
+                position: absolute;
+                content: "::";
+                left: -10px;
+                top: 0px;
+                font-size: $small-h6;
+            }
+        }
+    }
+    #jquery-tab-pager-navi {
+        display: none;
+    }
+}
+
+.main-out.ranking {
+    border: 0;
+}
+
+
+
+
+/*** media queries ****************************************************************************************************************************************/ 
+
+@include breakpoint(large only) {//1024 - 1200  
+    .ranking-outer {padding: 0 0 60px;}
+    .ranking-outer .main-tab-content .tab-contents .tab-content-box {padding: 50px 40px 0;}
+    .content-outer.ranking .divi-week-block .dw-heading {padding: 35px 30px 30px;}
+    .content-outer.ranking .divi-week-block .dw-content {padding: 40px 30px 40px;}
+    .content-outer.ranking .divi-week-block .social-share {padding: 35px 30px;}
+    .content-outer.ranking .divi-week-block .dw-content .tabs-content {padding: 0 0 0 35px;}
+    
+} 
+@include breakpoint(medium down){ // 767 - 1023 
+    
+    .ranking-outer {padding: 0 0 40px;}
+    .ranking-outer .main-tab-content .tab-contents .tab-content-box {padding: 40px 20px 0;}
+    .content-outer.ranking .divi-week-block .dw-heading {padding: 20px 10px;}
+    .content-outer.ranking .divi-week-block .dw-content {padding: 20px;}
+    .content-outer.ranking .divi-week-block .social-share {padding: 20px;}
+    .content-outer.ranking .divi-week-block .dw-content .tabs-content {padding: 0;}
+    .ranking-outer .dw-title h6{font-size: $intro-size;}
+    .content-outer.ranking .divi-week-block .dw-content .tabs-content .tabs-panel ul { padding: 0 0 25px 25px;}
+    .content-outer.ranking .divi-week-block .dw-content .tabs li a,.content-outer.ranking .divi-week-block .dw-content .tabs-content .tabs-panel ul li,.content-outer.ranking .divi-week-block .dw-content .tabs-content .tabs-panel p,.content-outer.ranking .divi-week-block .dw-content .tabs-content .tabs-panel ul li h6{font-size: $size-base;}
+    .content-outer.ranking .divi-week-block .social-share .social-links span{font-size: $small-size;}
+   
+}
+@include breakpoint(small only){ //0 -768 
+ 
+    .ranking-outer {padding: 0 0 40px;}
+    .ranking-outer .main-tab-content .tab-contents .tab-content-box {padding: 40px 20px 0;}
+    .content-outer.ranking .divi-week-block .dw-heading {padding: 10px 10px 17px;}
+    .content-outer.ranking .divi-week-block .dw-content {padding: 10px 10px 5px;}
+    .content-outer.ranking .divi-week-block .social-share {padding: 15px 10px;}
+    .content-outer.ranking .divi-week-block .dw-content .tabs-content {padding: 0;}
+    .ranking-outer .dw-title h6{font-size: $size-base;padding: 0 8px;letter-spacing: 0;line-height: 24px;}
+    .content-outer.ranking .divi-week-block .dw-heading .date{font-size: $small-size;padding: 0 0 0 8px;float: left;line-height: 14px;}
+    .content-outer.ranking .divi-week-block .dw-content .tabs-content .tabs-panel ul { padding: 0 0 20px 15px;}
+    .content-outer.ranking .divi-week-block .dw-content .tabs li a,.content-outer.ranking .divi-week-block .dw-content .tabs-content .tabs-panel ul li,.content-outer.ranking .divi-week-block .dw-content .tabs-content .tabs-panel p,.content-outer.ranking .divi-week-block .dw-content .tabs-content .tabs-panel ul li h6{font-size: $small-size;}
+    .content-outer.ranking .divi-week-block .social-share .social-links span{font-size: $small-size;}
+    .content-outer.ranking .divi-week-block { margin: 0 0 40px;}
+    .ranking-outer .dw-title h6::before {font-size: $size-p;}
+    .content-outer.ranking .divi-week-block .dw-content .tabs{border-bottom: 1px solid $border-bg;padding: 0 0 15px;margin: 0 0 20px;text-align: center;}
+    .content-outer.ranking .divi-week-block .dw-content .tabs li{display: inline-block;}
+    .content-outer.ranking .divi-week-block .social-share .social-links{text-align: center;}
+    .content-outer.ranking .divi-week-block .social-share .social-links ul {float: none;text-align: center;margin: 0 0 5px;width: 100%;}
+    .content-outer.ranking .divi-week-block .social-share .social-links span,.content-outer.ranking .divi-week-block .social-share .social-links .dw-name{float: none;width: 100%;display: inline-block;line-height: 12px;}
+    .content-outer.ranking .divi-week-block .social-share .social-links .dw-name{margin: 15px 0 0;}
+    .content-outer.ranking .divi-week-block .dw-content .tabs li a {padding: 10px;}
+}
+ 
+@media only screen and (max-width: 479px) {
+    
+}

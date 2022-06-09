@@ -1,0 +1,70 @@
+@import  "_variables"; 
+ 
+// -------------------------- -------------------------- -------------------------- -------------------------- 
+
+@mixin border-radius($radius: 5px) {
+    -moz-border-radius:    $radius;
+    -webkit-border-radius: $radius;
+    border-radius:         $radius;
+}
+@mixin transit {
+  -webkit-transition: all 300ms ease-in 0s;
+     -moz-transition: all 300ms ease-in 0s;
+          transition: all 300ms ease-in 0s;
+}
+ @mixin transition($transition-property, $transition-time, $method) {  //@include transition(all, 0.3s, ease-in-out);
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+@mixin border-styles($color, $width) {
+    //@include border-styles($orange-col, 1px);
+    border: {
+        color: $color;
+        width: $width;
+        style: solid;
+    }
+}
+
+
+
+@mixin transform-translatey($val){ //@include transform-translatey(-50%);
+    -webkit-transform: translateY($val);
+    -moz-transform   : translateY($val);
+    -o-transform     :translateY($val);
+    -ms-transform    :translateY($val);
+    transform        : translateY($val);
+}
+@mixin transform-translatex($val){ //@include transform-translatex(-50%);
+    -webkit-transform: translateX($val);
+    -moz-transform   : translateX($val);
+    -o-transform     :translateX($val);
+    -ms-transform    :translateX($val);
+    transform        : translateX($val);
+}
+ 
+/*** Button Style ****************************************************/
+.primary-bttn{
+    font-family: $btnfont;
+    color: $second-dark;
+    display: inline-block;
+    font-size: $size-p;
+    background: none;
+    border: 2px solid $primary-col;
+    text-transform: uppercase;
+    line-height: 26px;
+    padding: 13px 34px;
+    letter-spacing: 4.7px;
+    &:hover,
+    &:active,
+    &:focus{
+        background: $primary-col;
+        color: $lighter;
+    }
+
+}
+
+
+ 
